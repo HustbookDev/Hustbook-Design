@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hustbook - </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interface design for the Hustbook project, in the form of static web pages.">
+    <meta name="author" content="Hustbook Development Team">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./assets/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./assets/js/html5shiv.js"></script>
+      <script src="./assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./assets/ico/favicon.png">
+
+    <!-- Place anything custom after this. -->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li  class="active"><a href="index.html"><i class="icon-home"></i> 主页</a></li>
+        <li ><a href="category.html"><i class="icon-tags"></i> 分类信息</a></li>
+        <li ><a href="explore.html"><i class="icon-globe"></i> 热点探索</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> 登录</a>
+          <form class="form-login-dropdown dropdown-menu">
+            <div class="form-group">
+              <label class="control-label" for="login_username">用户名</label>
+              <div class="">
+                <input type="text" id="login_username" name="login_username" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="login_passowrd">密码</label>
+              <div class="">
+                <input type="password" id="login_passowrd" name="login_passowrd" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class=""><a href="home.html" class="btn btn-primary">登录</a> <a href="#form-register" data-toggle="tab" class="btn btn-default">注册</a></div>
+            </div>
+          </form>
+        </li>
+        <li><a href="register.html"><i class="icon-pencil"></i> 注册</a></li>
+      </ul>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container first-container">
+  <div class="row">
+    <div class="col-md-8 hidden-sm">
+      <img src="./assets/img/title-drawing.png" alt="Hustbook drawing">
+    </div>
+    <div class="col-md-4">
+      <div class="tab-content index-form card">
+        <form id="form-login" class="form-horizontal form-login active fade in tab-pane">
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="login_username">用户名</label>
+            <div class="col-md-9">
+              <input type="text" id="login_username" name="login_username" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="login_passowrd">密码</label>
+            <div class="col-md-9">
+              <input type="password" id="login_passowrd" name="login_passowrd" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-9 col-md-offset-3"><a href="home.html" class="btn btn-primary">登录</a> <a href="#form-register" data-toggle="tab" class="btn btn-default">注册</a></div>
+          </div>
+        </form>
+
+        <form id="form-register" class="form-horizontal form-register tab-pane fade">
+          <div class="form-group">
+            <label for="reg_username" class="col-md-3 control-label">用户名</label>
+            <div class="col-md-9">
+              <input type="text" id="reg_username" name="reg_username" class="form-control" placeholder="请输入用户名">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reg_password" class="col-md-3 control-label">密码</label>
+            <div class="col-md-9">
+              <input type="text" id="reg_password" name="reg_password" class="form-control" placeholder="请输入密码">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reg_password_rp" class="col-md-3 control-label">重复密码</label>
+            <div class="col-md-9">
+              <input type="text" id="reg_password_rp" name="reg_password_rp" class="form-control" placeholder="请重复密码">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reg_email" class="col-md-3 control-label">电子邮箱</label>
+            <div class="col-md-9">
+              <input type="text" id="reg_email" name="reg_email" class="form-control" placeholder="请输入电子邮箱">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-9">
+              <label class="checkbox" for="reg_eula">
+                <input type="checkbox" id="reg_eula" name="reg_eula"> 我接受<a href="#">最终用户许可协议</a>。
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-9 col-md-offset-3">
+              <a href="#" class="btn btn-primary">注册</a> <a href="#form-login" data-toggle="tab" class="btn btn-default">返回</a>
+            </div> 
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ^ END .col-md-4 -->
+  </div>
+</div>
+
+    <footer class="well signature">
+  <h6>&copy;2013 Hustbook Development Team; All Rights Reserved.</h6>
+  <h6>Designed and Developed by <a href="http://isn.sfeisystems.net">SFEI Systems Inc.</a></h6>
+  <p><a href="https://www.ingress.com" class="btn btn-primary"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAVCAYAAABPPm7SAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQxJREFUeNrMVNERgjAMLZ4DsIFsYDcANnADcQJxAkdQJsANdAN0Ah0BJ4AN8OXu1Su1COeXuXuXtCGvaZKi1N9I13VV15cGWBGN46tM3Nzh2QCRtd5TF9ZeDayHCCR4Czy4Dqljau2QfRAYKYIguCDVTBawT3IVmKX7oUtwBVrgjIAj9I31OUDlwI7ZxUNFTGhrp3Bia/oSu4gzX/5IWU5JmY0g5Z4au4ItJlhZejoBTqyRam3syQQIklZm7Peo+GoQcYCWvxBoy5a2JZ4YPfQWTOsyoPTNPX3vlvpIIuAO5DI8nI2Kvpy+qFdsD4nMf8WJe3J7wdRlHtqvBB4SNRQ89n8IzRVI+KfyEmAAKFvd3ye44RMAAAAASUVORK5CYII=">  Join the Resistance!</a></p>
+</footer>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/application.js"></script>
+  </body>
+</html>
+
+<!-- Prepare to die in agony for the glory of the Sierra Empire! -->
+<!--  Designed and developed by Sierra Six of SFEI Systems Inc.  -->
+<!--                     akasfei@gmail.com                       -->
