@@ -1,0 +1,60 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li {{#is basename "index"}} class="active"{{/is}}><a href="index.html"><i class="icon-home"></i> 主页</a></li>
+        <li {{#is basename "category"}} class="active"{{/is}}><a href="category.html"><i class="icon-tags"></i> 分类信息</a></li>
+        <li {{#is basename "explore"}} class="active"{{/is}}><a href="explore.html"><i class="icon-globe"></i> 热点探索</a></li>
+      </ul>
+      {{#is basename "home"}}
+      <ul class="nav navbar-nav pull-right">
+        <li class="pull-right dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Sandman</a>
+          <ul class="dropdown-menu">
+            <div class="profile-head">
+              <img src="assets/img/profileimg_thumb/Deadmau-5-l.jpg" alt="" class="pull-left img-polaroid">
+              <h5>Sandman</h5>
+              <span class="label">用户等级2</span>
+            </div>
+            <li><a href="#"><i class="icon-cog"></i> 设置</a></li>
+            <li><a href="#"><i class="icon-signout"></i> 登出</a></li>
+          </ul>
+        </li>
+      </ul>
+      {{else}}
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> 登录</a>
+          <form class="form-login-dropdown dropdown-menu">
+            <div class="form-group">
+              <label class="control-label" for="login_username">用户名</label>
+              <div class="">
+                <input type="text" id="login_username" name="login_username" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="login_passowrd">密码</label>
+              <div class="">
+                <input type="password" id="login_passowrd" name="login_passowrd" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class=""><a href="home.html" class="btn btn-primary">登录</a> <a href="#form-register" data-toggle="tab" class="btn btn-default">注册</a></div>
+            </div>
+          </form>
+        </li>
+        <li><a href="register.html"><i class="icon-pencil"></i> 注册</a></li>
+      </ul>
+      {{/is}}
+      </ul>
+    </div>
+  </div>
+</nav>
